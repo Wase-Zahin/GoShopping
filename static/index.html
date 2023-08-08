@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Brazil Visa Application in China  </title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- jQuery 3 -->
+    <script src="https://software.blsbrazilvisa.com/template/bower_components/jquery/dist/jquery.min.js"></script>
+    <!-- jQuery UI 1.11.4 -->
+    <script src="https://software.blsbrazilvisa.com/template/bower_components/jquery-ui/jquery-ui.min.js"></script>
+    <!-- Bootstrap 3.3.7 -->
+    <link rel="stylesheet" href="https://software.blsbrazilvisa.com/template/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://software.blsbrazilvisa.com/template/bower_components/font-awesome/css/font-awesome.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://software.blsbrazilvisa.com/template/bower_components/Ionicons/css/ionicons.min.css">
+    <!-- DataTables -->
+    <link rel="stylesheet" href="https://software.blsbrazilvisa.com/template/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css">
+    <link href="https://cdn.datatables.net/buttons/1.5.1/css/buttons.dataTables.min.css" rel="stylesheet" />
+    <script src="https://software.blsbrazilvisa.com/template/bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="https://software.blsbrazilvisa.com/template/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+
+    <script src="https://cdn.datatables.net/buttons/1.6.0/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js"></script>
+    <script src="https://cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/pdfmake.min.js"></script>
+    <script src="https://cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/vfs_fonts.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.6.0/js/buttons.print.min.js"></script>
+    <script src="https://cdn.datatables.net/select/1.3.1/js/dataTables.select.min.js"></script>
+
+    <script src="https://cdn.datatables.net/buttons/1.6.0/js/buttons.html5.min.js"></script>
+
+
+    <!-- Theme style -->
+    <link rel="stylesheet" href="https://software.blsbrazilvisa.com/template/dist/css/AdminLTE.min.css">
+    <!-- AdminLTE Skins. Choose a skin from the css/skins
+         folder instead of downloading all of them to reduce the load. -->
+    <link rel="stylesheet" href="https://software.blsbrazilvisa.com/template/dist/css/skins/_all-skins.min.css">
+    <!-- Morris chart -->
+    <link rel="stylesheet" href="https://software.blsbrazilvisa.com/template/bower_components/morris.js/morris.css">
+    <!-- jvectormap -->
+    <link rel="stylesheet" href="https://software.blsbrazilvisa.com/template/bower_components/jvectormap/jquery-jvectormap.css">
+    <!-- Date Picker -->
+
+    <!-- Daterange picker -->
+    <link rel="stylesheet" href="https://software.blsbrazilvisa.com/template/bower_components/bootstrap-daterangepicker/daterangepicker.css">
+    <!-- bootstrap wysihtml5 - text editor -->
+    <link rel="stylesheet" href="https://software.blsbrazilvisa.com/template/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
+    <script src="https://software.blsbrazilvisa.com/assets/js/jquery.validate.js"></script>
+    <link rel="stylesheet" href="https://software.blsbrazilvisa.com/assets/css/custom.css">
+    <script>
+        window.setTimeout(function() {
+            $(".alert").fadeTo(500, 0).slideUp(500, function(){
+                $(this).remove();
+            });
+        }, 2000);
+    </script>
+    <style>
+        .widthmar{width:100%;}
+        @media (max-width:767px)
+        {
+            .widthmar{width:92%;}
+        }
+        @media (min-width:768px)
+        {
+            .widthmar{width:94%;}
+        }
+    </style>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+<!-- Site wrapper -->
+<div class="wrapper"><!doctype html>
+    <html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Step 3</title>
+        <link href="https://software.blsbrazilvisa.com/favicon.ico" rel="icon" type="image/png">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link href="https://software.blsbrazilvisa.com/css_appoint/app.css" rel="stylesheet" type="text/css">
+        <link href="https://software.blsbrazilvisa.com/css_appoint/app-orange.css" rel="stylesheet" type="text/css">
+        <link href="https://software.blsbrazilvisa.com/css_appoint/datepicker.css" rel="stylesheet" type="text/css">
+        <style>
+
+            .auth-container{width:980px;}
+            .auth-container #thisForm{max-width: 95%;float: none;margin: 0 auto;border: solid 1px #e2e2e4;padding: 20px 20px;border-radius:0px;}
+            .alert-danger{color:#a94442!important;background-color:#f2dede!important;border-color: #ebccd1 !important;}
+            .alert-danger:before{border-left-color: #ebccd1 !important;    border-right-color: #ebccd1 !important; border-left-color:#ebccd1 !important;}
+            .alert-danger:after{border-left-color: #f2dede !important;  border-right-color: #f2dede !important;}
+            .alert-success{color:#3c763d!important; background-color:#dff0d8!important; border-color:#d6e9c6!important;}
+            .alert-success:before{border-left-color: #d6e9c6 !important;    border-right-color: #d6e9c6 !important; border-left-color:#d6e9c6 !important;}
+            .alert-success:after{border-left-color: #dff0d8 !important;    border-right-color: #dff0d8 !important;}
+            .alert-info{color:#31708f!important;background-color:#d9edf7!important;border-color:#bce8f1!important;}
+            .alert-info:before{border-left-color: #bce8f1 !important;    border-right-color: #bce8f1 !important; border-left-color:#bce8f1 !important;}
+            .alert-info:after{border-left-color: #d9edf7 !important; border-right-color: #d9edf7 !important;}
+            .alert-warning{color: #8a6d3b!important;background-color: #fcf8e3!important;border-color:#faebcc!important;}
+            .alert-warning:before{border-left-color: #faebcc !important;    border-right-color: #faebcc !important; border-left-color:#faebcc !important;}
+            .alert-warning:after{border-left-color: #fcf8e3 !important; border-right-color: #fcf8e3 !important;}
+            .auth-container {width: 100%;max-width: 1170px;}
+            @media only screen and (max-width: 768px) {
+                .auth-container{width:100%;}
+                .auth-container #thisForm {max-width: 85%;}
+            }
+        </style>
+    </head>
+    <body>
+    <div id="myModalPrimeTime" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Information</h4>
+                </div>
+                <div class="modal-body">
+                    <p><b>Please Note:</b><br>Appointment booked under Prime Time is a paid service. Additional fee will be charged if you wish to opt for this service.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="myModalProvisional" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Provisional Appointment</h4>
+                </div>
+                <div class="modal-body">
+                    <p><b>Please Note:</b><br> To reconfirm the provisional appointment you will be getting an URL 02 days prior to your appointment date and it will be valid for 24 hours time to confirm. If you failed to reconfirm within the time your provisional appointment will be treated as cancelled.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="auth">
+        <div class="auth-container">
+            <div class="card">
+                <header class="auth-header">
+                    <h1 class="auth-title"> Appointment booking confirmation </h1>
+                </header>
+                <div class="auth-content">
+                    <form action="https://software.blsbrazilvisa.com/bls_appmnt/bls-brazil-appointment-new" id="thisForm" method="post" accept-charset="utf-8">
+                        <input type="hidden" name="csrf_test_name" value="a2e4cfdd18633898919bf844c623e5da" />
+                        <div class="card card-block">
+                            <div class="form-group row">
+                                <label for="" class="col-sm-4 form-control-label">APPOINTMENT SCHEDULE</label><br><hr>
+                            </div>
+                            <input readonly class="form-control" name="valCenterId" id="valCenterId" value="ff189c4b74a31f3fe28c23ce1291e4d5c4d29dbda22ebaa8604636ccc2efe7a982991f5d3ab7c03591ecdd701bf1740f7b9fe1fa5ecee6d62b9c4f971df53671UNkJOqBHFNzbsBWJBz1wdcGhZ2ME3ibC5gosTmfu1lo-" type="hidden">
+                            <input readonly class="form-control" name="valCenterType" id="valCenterType" value="66d4db9803ab594e4a96f9e19e5caac7b53cdc896b0bceb510b12a6218413bdedf377c7a51ffaa6a37f0a2d0960e05d17b63cb18fbd2fef6922fcd09419b2a75y4JyEIgiv6jenMib1yNH~vhUz.~T1AaOggGpCRW49dQ-" type="hidden">
+                            <!--<input readonly class="form-control" name="valAppointmentType" id="valAppointmentType" value="normal" type="hidden">-->
+                            <div class="form-group row">
+                                <label for="valCenterLocationId" class="col-sm-4 form-control-label">Captcha</label>
+                                <div class="col-sm-3 captcha" id="captImgReg"><img id="Imageid" src="https://software.blsbrazilvisa.com/captcha/1688552223.5202.jpg" style="width: 150px; height: 40px; border: 0;" alt=" " /></div>
+                                <div class="col-sm-4">
+                                    <input type="text" class="form-control" name="captcha_code"  placeholder="Captcha" autocomplete="off" id="captcha_code_reg" maxlength="6">
+                                    <div id="capErrorReg"></div>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="valAppointmentDate" class="col-sm-4 form-control-label">Appointment Date</label>
+                                <div class="col-sm-4">
+                                    <input style="width:100%" type="text" readonly class="form-control" name="valAppointmentDate" id="valAppointmentDate" value="">
+                                </div>
+                                <div class="col-sm-4 color_lbl">
+                                    <span data-toggle="tooltip" data-original-title="Appointment Available" class="label label-available">xx</span>
+                                    <span data-toggle="tooltip" data-original-title="All Appointment Booked" class="label label-slotfull">xx</span>
+                                    <span data-toggle="tooltip" data-original-title="Currently Selected Day" class="label label-selected">xx</span>
+                                    <span data-toggle="tooltip" data-original-title="Weekly Off Day" class="label label-weeklyoff">xx</span>
+                                    <span data-toggle="tooltip" data-original-title="Holiday" class="label label-holiday">xx</span>
+                                </div>
+                            </div>
+
+                            <div style="display:none" id="divAppointmentType">
+                                <div class="form-group row">
+                                    <label for="valAppointmentType" class="col-sm-4 form-control-label">Appointment Type</label>
+                                    <div class="col-sm-4">
+                                        <select name="valAppointmentType" class="form-control boxed" id="valAppointmentType">
+                                            <option value="">- Select -</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div style="display:none" id="divApplicants">
+
+                                <div class="form-group row">
+                                    <label for="" class="col-sm-4 form-control-label">Time Slot</label>
+                                    <div class="col-sm-4">
+                                        <select required name="appointment_normal_time" class="form-control boxed time_slot_lists normal_slots">
+                                            <option value="">- Normal -</option>
+                                        </select>
+                                        <select required name="appointment_prime_time" class="form-control boxed time_slot_lists prime_slots">
+                                            <option value="">- Prime -</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label for="" class="col-sm-4 form-control-label">Applicant Name</label>
+                                    <div class="col-sm-4">
+                                        <input autocomplete="off" required type="text" onBlur="this.value = this.value.toUpperCase();" class="form-control boxed" name="first_name" placeholder="Applicant Name">
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label for="valApplicantMobileNumber" class="col-sm-4 form-control-label">Applicant Mobile</label>
+                                    <div class="col-sm-4">
+                                        <input type="text" name="valMobileNumber" id="valMobileNumber" placeholder="Mobile Number" class="form-control boxed">
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label for="valEmailAddress" class="col-sm-4 form-control-label">Email Address</label>
+                                    <div class="col-sm-4">
+                                        <input type="text" name="valEmailAddress" id="valEmailAddress" class="form-control boxed" placeholder="Email Address">
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label for="" class="col-sm-4 form-control-label">Passport Number</label>
+                                    <div class="col-sm-4">
+                                        <input autocomplete="off" type="text" class="form-control boxed valPassportNumber" name="passport_number" placeholder="Passport Number" required>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="" class="col-sm-4 form-control-label">Remarks (If Any)</label>
+                                    <div class="col-sm-4">
+                                        <input autocomplete="off" required type="text" class="form-control boxed" name="service_request" placeholder="Service Request">
+                                    </div>
+                                </div>
+                                <!--<div class="form-group row">
+                                <label for="" class="col-sm-4 form-control-label">Captcha</label>
+                                <div class="col-sm-4">
+                                <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+                                <div class="g-recaptcha" data-sitekey=""></div>
+                                </div>
+                                </div>-->
+
+                                <div class="form-group m_5" id="divSubmit">
+                                    <button type="submit" name="action" value="valBookNow" id="valBookNow" class="btn btn-success">Book Now</button>
+                                    <button type="reset" name="reset" onclick="document.location.reload()" class="btn btn-info">Reset</button>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+
+
+
+                    </form>
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="https://software.blsbrazilvisa.com/js_appoint/vendor.js" language="javascript" type="text/javascript" /></script>
+    <script src="https://software.blsbrazilvisa.com/js_appoint/app.js" language="javascript" type="text/javascript" /></script>
+    <script src="https://software.blsbrazilvisa.com/js_appoint/loading.js" language="javascript" type="text/javascript" /></script>
+    <script src="https://software.blsbrazilvisa.com/js_appoint/datepicker.js" language="javascript" type="text/javascript" /></script>
+    <script type="text/javascript">
+        $.validator.addMethod("validemail", function(value, element) {
+// allow any non-whitespace characters as the host part
+            return this.optional( element ) || /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/.test( value );
+        }, 'Please enter a valid email address.');
+        $.validator.addMethod("lettersonly", function(value, element) {
+            return this.optional(element) || /^[a-zA-Z\s]*$/.test(value);
+        }, "Letters only please");
+        jQuery.validator.addMethod("passportCheck", function(value, element)
+        {
+            //return this.optional(element) || /^[A-Z]{5}\d{4}[A-Z]{1}$/.test(value);
+            //return this.optional(element) || /^[A-PR-WY][1-9]\d\s?\d{4}[1-9]$/.test(value);
+            return this.optional(element) || /^[A-Z0-9.,/ $@()]+$/.test(value);
+        }, "Please enter a valid Passport");
+
+        function countVASTotal(){
+            $('.itemCost, #vasTotal').text('0.00');
+            var vasTotal = 0;
+            $(".vasItem input[type='checkbox']").each(function() {
+                if ($(this).is(":checked")) {
+                    $(this).closest('tr').children('td.itemQty').find('select').prop('disabled', false);
+                    $(this).closest('tr').children('td.itemprice1').find('select').prop('disabled', false);
+                    var itemQty = $(this).closest('tr').children('td.itemQty').find('select').val();
+                    var itemPrice = parseFloat($(this).closest('tr').children('td.itemPrice').text());
+                    var itemCost = (itemQty * itemPrice.toFixed(2));
+                    $(this).closest('tr').children('td.itemCost').text(itemCost.toFixed(2));
+                    $(this).closest('tr').css('color','#000');
+                    vasTotal += itemCost;
+                } else {
+                    $(this).closest('tr').css('color','#9B9696');
+                    $(this).closest('tr').children('td.itemQty').find('select').prop('disabled', true);
+                    $(this).closest('tr').children('td.itemprice1').find('select').prop('disabled', true);
+                }
+            });
+            if (vasTotal == '0.00') {
+                $('#paidTotal').val('');
+                $('#balanceTotal').val('');
+            }
+            $("#vasTotal").text(vasTotal.toFixed(2));
+            return vasTotal;
+        }
+
+        function countTotal(){
+            var total_vas = countVASTotal();
+            var total_bls = $("#service_fee").val();
+            $("#countTotal").val((total_vas + total_bls).toFixed(2)).prop('readonly', true);
+        }
+        setInterval(countTotal, 100);
+        $("#valVasServiceId1").prop('checked', true);
+        $("#valVasServiceId2").prop('checked', true);
+
+        $(document).ready(function () {
+
+            $("#valAppointmentType").change(function(){
+
+                var selected = $(this).val();
+
+                $(this).find("option[value='']").prop('disabled',true);
+
+                switch (selected){
+                    case 'normal':
+                        $(".visa_service").find("option[value='2']").prop('disabled',false);
+                        $('#myModalPrimeTime').modal('hide');
+                        $(".prime_slots, #divApplicants").hide();
+                        $(".normal_slots, #divApplicants").show();
+                        break;
+                    case 'prime':
+                        $('#myModalPrimeTime').modal('show');
+                        $(".visa_service option[value='2']").prop('disabled',true);
+                        $(".visa_service option[value='1']").prop('selected', 'selected').change();
+                        $(".normal_slots, #divApplicants").hide();
+                        $(".prime_slots, #divApplicants").show();
+                        break;
+                    default:
+                        $("#divApplicants").hide();
+                        break;
+                }
+
+            });
+
+            $(function() {
+
+                if (!$('#thisForm').length) {
+
+                    return false;
+
+                }
+
+                var formValidation = {
+
+                    rules: {
+                        valAppointmentDate: {required: true},
+                        valServiceType: {required: true},
+                        first_name: {
+                            required: true,
+                            lettersonly: true
+                        },
+                        valMobileNumber: {required: true,number:true,minlength: 10,maxlength: 13},
+                        valEmailAddress: {required: true, validemail: true},
+                        passport_number: {required: true, passportCheck: true},
+                        pincode: {required: true, number: true},
+                        contact: {required: true, number: true},
+                        visa_type: {required: true},
+                        agree: {required: true}
+                    }
+
+                }
+
+                $.extend(formValidation, config.validations);
+
+                $('#thisForm').validate(formValidation);
+
+            });
+
+            $('.valPassportNumber').blur(function(){
+                var passport = $(this).val();
+                var cval = $("input[name='csrf_test_name']").val();
+                $.ajax({
+                    url: 'https://software.blsbrazilvisa.com/bls_appmnt/passport/',
+                    type: 'POST',
+                    data: {passport:passport,'csrf_test_name':cval},
+                    dataType: 'json'
+                }).done(function(resp) {
+                    var csrfvalue = resp.csrfvalue;
+                    $("input[name='csrf_test_name']").val(csrfvalue);
+                    if(resp.status === 'true'){
+                        alert("Dear Applicant \nSystem found some issues with Passport number\n\n 1. Passport may already have an appointment due into the system.\n 2. Please cancel your previous appointment to schedule another one.\n 3. Passport may already have availed service in last 30 days.");
+                        $('.valPassportNumber').val("");
+                        $('.valPassportNumber').attr("data-rule-required", "true");
+                        $('.valPassportNumber').attr("data-msg-required", "Passport Number is blocked");
+                    }
+                }).fail(function(resp) {
+                }).always(function(resp) {
+                });
+            });
+
+            $('.valEmailcheck').blur(function(){
+                var passport = $(this).val();
+                $.ajax({
+                    url: 'https://software.blsbrazilvisa.com/bls_appmnt/email/',
+                    type: 'POST',
+                    data: {passport:passport},
+                    dataType: 'json'
+                }).done(function(resp) {
+                    if(resp.status === 'true'){
+                        alert("Email ID is already exist");
+                        $('.valEmailcheck').val("");
+                        $('.valEmailcheck').attr("data-rule-required", "true");
+                        $('.valEmailcheck').attr("data-msg-required", "Email ID is already exist");
+                    }
+                }).fail(function(resp) {
+                }).always(function(resp) {
+                });
+            });
+
+            function formatDate(rawDate) {
+                var day = ("0" + rawDate.getDate()).slice(-2);
+                var month = ("0" + (rawDate.getMonth() + 1)).slice(-2);
+                return rawDate.getFullYear() + "-" + (month) + "-" + (day);
+            }
+
+            var onlyWorkingDates = [];
+            var onlyWeeklyOffDates = [];
+            var onlyHolidayOffDates = ["2021-01-01","2021-05-03","2021-05-04","2021-05-05","2021-06-14","2021-10-01","2021-10-02","2021-10-03","2021-10-04","2021-10-05","2021-10-06","2021-10-07","2022-01-03","2022-01-31","2022-02-01","2022-02-02","2022-02-03","2022-02-04","2022-02-05","2022-02-06","2022-04-11","2022-04-16","2022-05-02","2022-05-03","2022-05-04","2022-06-03"];
+//var onlyHolidayOffDates = [];
+            var onlySlotfullDates = ["2023-07-06","2023-07-07","2023-07-10","2023-07-11","2023-07-12","2023-07-13","2023-07-14","2023-07-17","2023-07-18","2023-07-19","2023-07-20","2023-07-21","2023-07-24","2023-07-25","2023-07-26","2023-07-27","2023-07-28"];
+
+            $('#valAppointmentDate').datepicker({
+                orientation: "bottom left",
+                format:"yyyy-mm-dd",
+                beforeShowDay: function(date) {
+                    var sdate = formatDate(date);
+                    if(jQuery.inArray(sdate, onlyWorkingDates) != -1) {
+                        return { enabled : true, tooltip: 'Available', classes: 'label-available' };
+                    } else if (jQuery.inArray(sdate, onlyWeeklyOffDates) != -1) {
+                        return { enabled : false, tooltip: 'Weekly Off', classes: 'label-weeklyoff' };
+                    } else if (jQuery.inArray(sdate, onlyHolidayOffDates) != -1) {
+                        return { enabled : false, tooltip: 'Holiday', classes: 'label-holiday' };
+                    } else if (jQuery.inArray(sdate, onlySlotfullDates) != -1) {
+                        return { enabled : false, tooltip: 'Slots Full', classes: 'label-slotfull' };
+                    } else {
+                        return { enabled : false, tooltip: 'Not Available' };
+                    }
+                },
+                autoclose: true
+            }).on("show", function(e) {
+                $('.datepicker-switch').tooltip({
+                    "title": "Click here to expand view"
+                });
+            }).change(function() {
+                var app_date = $("#valAppointmentDate").val();
+                var cval = $("input[name='csrf_test_name']").val();
+                var inputCapCode = $('#captcha_code_reg').val();
+                pageLoading();
+                $.ajax({
+
+                    url: 'https://software.blsbrazilvisa.com/bls_appmnt/availability/',
+
+                    type: 'POST',
+
+                    data: {'18ad4eddead08eda50e545ea4c5fe74ccbedcd0c2b9941c833f735a1834c4edaac9b3bad27ff5263e83e835150a2660862401fdd784c67dcd3ddb1f04c8619a31ykGzxcO2c5oKaEpdghBMtKlkFmKckm7bheNceoJ9xQ=':3,'10dcf547c14d6d6ca47e2f065ff000eb7624b863746cb62a6a00bf73397040ce192fecc8507a01592d3f62317b02807646d6a2bb4f4c8f510a1a191aac028a4bIQjnSAupg6adUryA7jH0UzJc09SEWw0NaqP1RoR9ceU=':app_date,'af84823061fd1b3b0b0aa16e33283404ead9a6ffddda4a55b4f1de3512a97b9cc441b82c370149c6f91b6b05fdc2a912749b749cd5d060b272d3480d48e8e807WGqDD7vXObprFU4JcudnGuoX4Ky2bIxLUHULQrIonsx5lk/gQ1lgHKuFSvVVFbEj':inputCapCode,'csrf_test_name':cval},
+
+                    dataType: 'json'
+
+                }).done(function(resp) {
+                    var csrfvalue = resp.csrfvalue;
+                    $("input[name='csrf_test_name']").val(csrfvalue);
+
+                    $("#valAppointmentType").find("option[value='']").attr('disabled',false);
+
+                    $("#valAppointmentType").find('[value="prime"]').remove();
+
+                    $("#valAppointmentType").find('[value="normal"]').remove();
+
+                    $("#valAppointmentType").change();
+                    $(".normal_slots").empty();
+                    var noOfMembers = 1;
+
+                    if ((typeof resp.normal_slots !== "undefined" && noOfMembers > resp.normal_slots.length) && (typeof resp.prime_slots !== "undefined" && noOfMembers > resp.prime_slots.length)) {
+
+                        alert('Sorry! Appointment is not available for '+ noOfMembers + ' on selected date.'); window.location=document.referrer;
+
+                    } else {
+
+                        if (typeof resp.normal_slots !== "undefined" && resp.normal_slots.length >= noOfMembers) {
+
+                            $(".normal_slots").empty();
+
+                            $.each(resp.normal_slots, function (index, value) {
+
+                                $('.normal_slots').append('<option value="' + value.id + '">' + value.slot_time + '</option>');
+
+                            });
+
+                            $("#valAppointmentType").append($("<option></option>").attr("value",'normal').text('Normal Time'));
+
+                            $("#divAppointmentType").show();
+
+                        }
+
+                        if (typeof resp.prime_slots !== "undefined" && resp.prime_slots.length >= noOfMembers) {
+
+                            $(".prime_slots").empty();
+
+                            $.each(resp.prime_slots, function (index, value) {
+
+                                $('.prime_slots').append('<option value="' + value.id + '">' + value.slot_time + '</option>');
+
+                            });
+
+                            $("#valAppointmentType").append($("<option></option>").attr("value",'prime').text('Prime Time'));
+
+                            $("#divAppointmentType").show();
+
+                        }
+
+                    }
+
+                }).fail(function(resp) {
+//alert(JSON.stringify(resp));return;
+                    alert('Error while processing.');
+                }).always(function(resp) {
+
+                    Loading(false);
+//$('#myModalProvisional').modal('show');
+                });
+
+            });
+
+            $(".valDateOfBirth").datepicker({
+
+                startView:'decade',
+
+                format: 'yyyy-mm-dd',
+
+                endDate: '-10d',
+
+                orientation: "bottom left",
+
+                autoclose: true
+
+            }).on("show", function(e) {
+
+                $('.datepicker-switch').tooltip({
+
+                    "title": "Click here to expand view"
+
+                });
+
+            }).prop('readonly', true);
+
+
+
+            $(".valPassportValidityFrom").datepicker({
+
+                startView: "months",
+
+                format: 'yyyy-mm-dd',
+
+                startDate: '-10y',
+
+                endDate: '-1d',
+
+                autoclose: true,
+
+            }).on("show", function(e) {
+
+                $('.datepicker-switch').tooltip({
+
+                    "title": "Click here to expand view"
+
+                });
+
+            }).on('changeDate', function (selected) {
+
+                var startDate = new Date(selected.date.valueOf());
+
+                $('.valPassportValidityTill').datepicker('setStartDate', startDate);
+
+            }).on('clearDate', function (selected) {
+
+                $('.valPassportValidityTill').datepicker('setStartDate', null);
+
+            }).on('changeDate', function (ev) {
+
+//$(".valPassportValidityTill").focus();
+
+            }).prop('readonly', true);
+
+            $(".valPassportValidityTill").datepicker({
+
+                startView: "months",
+
+                format: 'yyyy-mm-dd',
+
+                startDate: '+7d',
+
+                endDate: '+10y',
+
+                autoclose: true,
+
+            }).on('changeDate', function (selected) {
+
+                var endDate = new Date(selected.date.valueOf());
+
+                $('.valPassportValidityFrom').datepicker('setEndDate', endDate);
+
+            }).on('clearDate', function (selected) {
+
+                $('.valPassportValidityFrom').datepicker('setEndDate', null);
+
+            }).prop('readonly', true);
+
+            $(".time_slot_lists").change(function () {
+
+                if ($(this).val() > -1) {
+
+                    $(".time_slot_lists").not(this).find("option[value=" + $(this).val() + "]").attr('disabled', 'disabled');
+
+                    $(".time_slot_lists").not(this).find("option[value=" + previous + "]").removeAttr('disabled');
+
+                } else {
+
+                    $(".time_slot_lists").not(this).find("option[value=" + previous + "]").removeAttr('disabled');
+
+                }
+
+            }).focus(function () {
+
+                previous = $(this).val();
+
+            });
+            var date = new Date();
+            $('#datepicker').datepicker({
+//startDate: startDate, //set start date
+//endDate: endDate, //set end date
+                endDate: "date",
+                startView: 3,
+                autoclose: true,
+                todayHighlight: true,
+                format: 'yyyy-mm-dd'
+            })
+
+            $('#datepicker1').datepicker({
+                startDate: "+6m", //set start date
+                autoclose: true,
+                todayHighlight: true,
+                format: 'yyyy-mm-dd'
+            })
+        });
+
+    </script>
+
+    </body>
+
+    </html>
